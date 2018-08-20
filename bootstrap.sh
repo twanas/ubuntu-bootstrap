@@ -29,8 +29,8 @@ repo=`pwd`
 # install system packages and settings
 source $repo/core/system.sh
 
-# install oh-my-zsh and dotfile
-source $repo/core/omz.sh
+# install oh-my-fish and dotfile
+source $repo/core/omf.sh
 
 # install vim settings and colors
 source $repo/core/vim.sh
