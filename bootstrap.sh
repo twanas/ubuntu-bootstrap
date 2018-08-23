@@ -34,3 +34,6 @@ source $repo/core/omf.sh
 
 # install vim settings and colors
 source $repo/core/vim.sh
+
+# install applications
+source $repo/core/apps.sh
