@@ -1,5 +1,5 @@
 # development
 
-sudo snap install pycharm-professional
-sudo snap install clion
-
+sudo snap install pycharm-professional --classic
+sudo snap install clion --classic
+sudo snap install datagrip --classic
