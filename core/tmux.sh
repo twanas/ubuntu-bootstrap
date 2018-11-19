@@ -1,2 +1,3 @@
-echo "Copying tmux confim"
-cp conf/tmux/config.tmux ~/.tmux.config
+echo "Installing tmux config"
+git clone https://github.com/samoshkin/tmux-config.git
+./tmux-config/install.sh
