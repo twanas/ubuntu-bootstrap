@@ -7,6 +7,8 @@ echo "Create SSH keys? (y/n): "
 read create_ssh
 echo "Create PGP keys? (y/n): "
 read create_pgp
+echo "Enable HiDPI Scaling? (y/n): "
+read create_hidpi_scaling
 
 echo "Installing system packages ..."
 # perform initial repo update
@@ -45,3 +47,11 @@ if [[ $create_pgp == "y" || $create_pgp == "Y" || $create_pgp == "yes" ]]; then
     sudo rngd -r /dev/urandom
     gpg --gen-key
 fi
+
+
+
+if [[ $create_hidpi_scaling == "y" || $create_hidpi_scaling == "Y" || $create_hidpi_scaling == "yes" ]]; then
+    echo "**HiDPI Scaling**"
+    gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "[{'Gdk/WindowScalingFactor', <2>}]"
+fi
+
