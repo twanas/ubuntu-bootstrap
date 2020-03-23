@@ -2,7 +2,7 @@
 
 # download apt-key
 
-sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 
 # add the repository:
 
