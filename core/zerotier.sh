@@ -7,5 +7,5 @@ read install_zerotier
 
 if [[ $install_zerotier == "y" || $install_zerotier == "Y" || $install_zerotier == "yes" ]]; then
     echo "** Installing Zerotier VPN Client **"
-curl -s https://install.zerotier.com | sudo bash
+    curl -s https://install.zerotier.com | sudo bash
 fi
