@@ -41,6 +41,9 @@ source $repo/core/tmux.sh
 # install applications
 source $repo/core/apps.sh
 
+# install ansible
+source $repo/core/anydesk.sh
+
 # install anydesk
 source $repo/core/anydesk.sh
 
